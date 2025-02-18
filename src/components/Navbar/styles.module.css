@@ -4,6 +4,7 @@
     justify-content: space-between;
     border-bottom: solid 1px rgb(203, 190, 190);
     line-height: 2px;
+    align-items: center;
 }
 
 .nav .left {
@@ -22,4 +23,13 @@
     font-size: 1.2rem;
     padding: 3px 16px;
     display: block;
+}
+
+.nav .left .menu li a:hover {
+    color: black;
+
+}
+
+.nav .right a:first-child {
+    margin-right: 5px;
 }
