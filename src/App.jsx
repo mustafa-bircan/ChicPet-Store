@@ -7,6 +7,7 @@ import {
 import Navbar from "./components/Navbar";
 import Signin from "./pages/Auth/Signin";
 import Signup from "./pages/Auth/Signup";
+import Products from "./pages/Products";
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
         <Navbar />
         <div id="content">
           <Switch>
-            <Route path="/" exact component={Home} />
+            <Route path="/" exact component={Products} />
             <Route path="/signin" component={Signin} />
             <Route path="/signup" component={Signup} />
           </Switch>
@@ -26,13 +27,7 @@ function App() {
     </Router>
 
 
-  )
-  function Home() {
-    return <>
-      <h2>Home</h2>
-
-    </>
-  }
+  );
 }
 
 export default App
